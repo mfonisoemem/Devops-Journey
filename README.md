@@ -5,6 +5,7 @@ Hi, I’m **Mfoniso Emem**, a Software Project Manager with 3+ years of experien
 I’m currently learning **DevOps and Cloud Engineering** to deepen my technical expertise in project management and bridge the gap between strategy and execution.  
 
 **Mission**
+
 I’ll be:  
 - Building real-world DevOps projects  
 - Gaining hands-on AWS and CI/CD experience  
