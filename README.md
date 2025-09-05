@@ -1,7 +1,6 @@
+👋 About Me!!
 
-Exploring DevOps and Cloud Engineering through practical projects.
-
-Hi, I’m **Mfoniso Emem**, a Software Project Manager with 3+ years of experience leading developers and DevOps teams.  
+I am **Emem**, a Software Project Manager with 3+ years of experience leading developers and DevOps teams.  
 I’m currently learning **DevOps and Cloud Engineering** to deepen my technical expertise in project management and bridge the gap between strategy and execution.  
 
 **Mission**
