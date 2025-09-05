@@ -1,1 +1,111 @@
+Static Website Hosting on AWS S3  
+
+This project demonstrates how to host a simple static website using **Amazon S3**.  
+It is part of my DevOps learning journey as I build hands-on experience with AWS cloud services.  
+
+## 🔹 Project Overview  
+- Upload a static website (HTML,Css) to an **S3 bucket**  
+- Configure the bucket for **public access**  
+- Enable **static website hosting**  
+- Test the website by accessing it through the S3 endpoint  
+
+## 🔹 AWS Services Used  
+- **Amazon S3** → Stores and serves the static website files  
+- **IAM** → For secure access and permissions management  
+- **Route 53** → For custom domain mapping  
+
+## 🔹 Outcome  
+By the end of this project, I’ll have a **publicly hosted website** on AWS S3 and an understanding of:  
+- Static website hosting on AWS  
+
+## 🔹Website Code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mfoniso's Static Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Static Website 🚀</h1>
+    <p>This is my first DevOps project deployed on <strong>AWS S3</strong>.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About This Project</h2>
+      <p>
+        This site is hosted on Amazon S3 as part of my DevOps learning journey.
+        The goal is to practice cloud hosting, permissions, and deployment workflows.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:mfonisoemem@gmail.com">mfonisoemem@gmail.com</a></p>
+      <p>Phone Number: 07069311103</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mfoniso Emem | DevOps Journey</p>
+  </footer>
+</body>
+</html>
+
+## 🔹 style.css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+
+
+
+## 🔹Step-by-Step Deployment on AWS S3
+
+- Create a New S3 Bucket
+- Go to AWS S3 console → Click Create bucket
+- Bucket name must be globally unique, mystaticwebsite-emem
+- Disable “Block all public access”
+
+-Click Create bucket
+-Enable Static Website Hosting
+-Properties → Static website hosting → Select Use this bucket to host a website
+-Set Index document to index.html
+
+Copy the S3 website endpoint → http://mystaticwebsite-emem.s3-website.eu-north-1.amazonaws.com/
+
+Upload Website Files
+-Upload index.html and style.css to the root of the bucket
+-Set Permissions
+-use this bucket policy for public read access
+
+Test the Website
+-Open the S3 website endpoint in a browser and my site went live.
+
+
 
