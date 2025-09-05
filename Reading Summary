@@ -1,0 +1,54 @@
+My Reading Journey
+
+**Understanding Cloud Computing**
+Cloud computing is delivering of computing services like networking, databases, servers, storages over the cloud. It allows individuala to access tech resources on demand without having to manage or own the hardware
+
+Devops: A collaboration between the development team which enables continous delivery of apps and servides to end users.
+
+Types of Cloud services:
+1- IAAS (Infrastructure as a code) | It provides virtual machines storage and networking
+2- PAAS- (Platform as a service)   | It provides platform for developing and running application without running about infrastructure (Databases)
+3- SAAS (Software as a service)    | It provides software apps over the internet( the applications you build)
+
+**AWS Amazon web services**
+# AWS Services Summary
+
+| Service                        | What It Does (Simple Terms)                          | Example Application                                  |
+|--------------------------------|-------------------------------------------------------|------------------------------------------------------|
+| **S3 (Simple Storage Service)**| Store files (images, videos, static websites)         | Host a static website, store user profile pictures   |
+| **EC2 (Elastic Compute Cloud)**| Virtual computer in the cloud                         | Run backend of a To-Do List app, host WordPress      |
+| **Elastic Beanstalk**          | Easy app hosting without server setup                 | Deploy a Node.js or Python app quickly               |
+| **Lambda**                     | Run code only when triggered (serverless)             | Resize an image when uploaded, send email on form submit |
+| **RDS (Relational Database Service)** | Managed SQL databases (MySQL, PostgreSQL, etc.)   | Store user accounts, app tasks, transactions         |
+| **DynamoDB**                   | Fast NoSQL database for flexible data                 | Chat messages, product catalog in e-commerce         |
+| **Route 53**                   | Domains and DNS management                            | Connect www.myapp.com to your AWS app                |
+| **CloudFront**                 | Makes websites and files load faster (CDN)            | Deliver videos, images, or static site globally      |
+| **IAM (Identity & Access Management)** | Control who can access AWS resources            | Give teammates upload access but block deletions     |
+| **CloudWatch**                 | Monitor apps and servers (logs, errors, performance)  | Track server crashes and send alerts                 |
+| **CodePipeline + CodeDeploy**  | Automate deployments (CI/CD)                          | Auto-update app when pushing code to GitHub          |
+| **VPC (Virtual Private Cloud)**| Private network for your AWS resources                | Keep database private, only backend can access       |
+
+
+**Questions I ask my self when choosing AWS Services**
+
+To understand which AWS services I need for my app, I ask myself these questions:
+1. How will users access my app?
+Do I need a website or frontend?: If yes → S3 (static site) or CloudFront (faster, CDN)
+Do I need a custom domain?: If yes → Route 53 (DNS/domain management)
+
+2. How will my app logic run (the backend)?
+Do I need a server running 24/7? :If yes → EC2 (manual control) or Elastic Beanstalk (managed hosting)
+Do I only need to run code on demand (event-driven)?: If yes → Lambda (serverless, pay-per-use)
+
+3. Where will I store data?
+Do I need to store files (images, documents, videos)?: If yes → S3
+Do I need a relational database (tables, SQL)?: If yes → RDS (Postgres, MySQL, etc.)
+Do I need fast NoSQL storage (flexible JSON-like data)?: If yes → DynamoDB
+
+4. How will I deploy updates?
+Am I okay with manual deployment?: If yes → upload directly (EC2 or Beanstalk)
+Do I want automatic deployment when I push to GitHub?: If yes → CodePipeline + CodeDeploy or GitHub Actions
+
+5. How will I monitor and secure my app?
+Do I want to track errors, logs, performance?: If yes → CloudWatch
+Do I need to control who can access AWS resources?: If yes → IAM (Identity & Access Management)
